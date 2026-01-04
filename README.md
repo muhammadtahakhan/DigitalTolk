@@ -40,6 +40,7 @@ php artisan translations:seed 100000
 ### Service Layer Pattern
 #### Purpose:
 Separates business logic from controllers to improve maintainability, readability, and testability.
+Developers can achieve a modular, testable, and maintainable codebase.
 
 ### Request Flow:
 Request -> Controller -> Service -> Model
@@ -49,12 +50,8 @@ Controllers: Handle HTTP requests/responses.
 Services: Contain business logic and data manipulation.
 Models: Represent database entities.
 
-### Data Transfer Objects (DTOs)
- Type-safe data transfer between layers, reduces coupling.
-
 ### Repository Pattern via Service Interface
 Why? Allows easy swapping of implementations and better testability.
-
 
 
 ### Performance Optimizations

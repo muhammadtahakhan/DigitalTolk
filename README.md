@@ -10,12 +10,15 @@ cd translation-management-service
 composer install
 
 ### 3. Environment  setup
+```
 cp .env.example .env
 php artisan key:generate
+```
 ### Configure api token in .env:
 API_TOKEN={any string will to use as api key or brear token}
 ### Configure your database in .env:
 ```
+DB_HOST=127.0.0.1
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -23,11 +26,7 @@ DB_DATABASE={database name}
 DB_USERNAME={db user name}
 DB_PASSWORD={your_password}
 ```
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE={database name}
-DB_USERNAME={db user name}
-DB_PASSWORD={your_password}
+
 ### 4. Run Migrations
 php artisan migrate
 ### 5. Seed the Database

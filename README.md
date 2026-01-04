@@ -68,3 +68,5 @@ PSR-12: PHP coding standard and SOLID principles: Applied throughout
 ## Api Doc
 file 
 Digitaltolk.postman_collection is included
+
+## I implemented basic functionality; additional performance optimizations, Docker Compose, and testing, queue, redis can be added if needed. 

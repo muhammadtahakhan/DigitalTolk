@@ -1,9 +1,7 @@
 ## Translation Management Service
 A Laravel-based service for managing and exporting translations with a strong focus on clean architecture, performance, and scalability.
 ### Requirements
-PHP 8.1 or higher
-Composer
-MySQL 8.0+
+PHP 8.1 or higher, Composer, MySQL 8.0+
 
 ### 1. Clone the Repository
 git clone <repository-url>

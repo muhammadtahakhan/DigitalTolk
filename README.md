@@ -64,3 +64,7 @@ Cache removed: Cleared on create/update/delete operations
 
 ## Code Standards
 PSR-12: PHP coding standard and SOLID principles: Applied throughout
+
+## Api Doc
+file 
+Digitaltolk.postman_collection is included

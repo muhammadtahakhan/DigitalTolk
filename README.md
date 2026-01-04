@@ -42,9 +42,9 @@ php artisan translations:seed 100000
 Separates business logic from controllers to improve maintainability, readability, and testability.
 
 ### Request Flow:
-Request -> Controller → Service → Model
+Request -> Controller -> Service -> Model
 
-Request: Input validation (also can authorization).
+Request: Input validation (also can authorization).\n
 Controllers: Handle HTTP requests/responses.
 Services: Contain business logic and data manipulation.
 Models: Represent database entities.

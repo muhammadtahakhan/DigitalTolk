@@ -4,7 +4,7 @@ A Laravel-based service for managing and exporting translations with a strong fo
 PHP 8.1 or higher, Composer, MySQL 8.0+
 
 ### 1. Clone the Repository
-git clone <repository-url>
+git clone https://github.com/muhammadtahakhan/DigitalTolk.git
 cd translation-management-service
 ### 2. Install Dependencies
 composer install

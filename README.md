@@ -15,7 +15,14 @@ php artisan key:generate
 ### Configure api token in .env:
 API_TOKEN={any string will to use as api key or brear token}
 ### Configure your database in .env:
+```
 DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE={database name}
+DB_USERNAME={db user name}
+DB_PASSWORD={your_password}
+```
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE={database name}
@@ -38,10 +45,10 @@ Separates business logic from controllers to improve maintainability, readabilit
 ### Request Flow:
 Request -> Controller → Service → Model
 
-Request: Input validation (also can authorization)
-Controllers: Handle HTTP requests/responses
-Services: Contain business logic and data manipulation
-Models: Represent database entities
+Request: Input validation (also can authorization).
+Controllers: Handle HTTP requests/responses.
+Services: Contain business logic and data manipulation.
+Models: Represent database entities.
 
 ### Data Transfer Objects (DTOs)
  Type-safe data transfer between layers, reduces coupling.
@@ -56,9 +63,8 @@ Why? Allows easy swapping of implementations and better testability.
 implemented indexing to improve read performance and scalability.
 
 ### Caching Strategy
-Export endpoint: Cached for using locale+tags as cache key
+Export endpoint: Cached for using locale+tags as cache key,
 Cache removed: Cleared on create/update/delete operations
 
 ## Code Standards
-PSR-12: PHP coding standard
-SOLID principles: Applied throughout
+PSR-12: PHP coding standard and SOLID principles: Applied throughout

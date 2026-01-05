@@ -40,10 +40,6 @@ The architecture uses a layered Service Pattern to keep different parts of the c
 ##
 For performance, we've added database indexing to speed up reads and help the system scale. We're also caching the export endpoint specifically, using locale + tags as the cache key. The cache automatically clears itself whenever there's a create, update, or delete operation, so the data stays consistent.
 
-### Service Layer Pattern
-#### Purpose:
-Separates business logic from controllers to improve maintainability, readability, and testability.
-Developers can achieve a modular, testable, and maintainable codebase.
 
 ### Request Flow:
 Request -> Controller -> Service -> Model

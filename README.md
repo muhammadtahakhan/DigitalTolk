@@ -36,6 +36,9 @@ php artisan translations:seed 100000
 
 <!-- -------------------------------------------------- -->
 ## Architecture & Design Choices
+The architecture uses a layered Service Pattern to keep different parts of the code separate and easier to maintain, test, and read. When HTTP requests come in, they flow from controllers to services to models. This keeps controllers lightweight while keeping the business logic where it belongs—in the services. The service interface acts as a repository abstraction, which makes it simple to swap out implementations and write unit tests.
+##
+For performance, we've added database indexing to speed up reads and help the system scale. We're also caching the export endpoint specifically, using locale + tags as the cache key. The cache automatically clears itself whenever there's a create, update, or delete operation, so the data stays consistent.
 
 ### Service Layer Pattern
 #### Purpose:
